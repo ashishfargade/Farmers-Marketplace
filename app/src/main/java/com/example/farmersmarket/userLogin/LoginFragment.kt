@@ -69,7 +69,7 @@ class LoginFragment : Fragment() {
         loginViewModel.navigatetoUserDetails.observe(viewLifecycleOwner, Observer { hasFinished->
             if (hasFinished == true){
                 loginViewModel.doneNavigatingUserDetails()
-                //view?.findNavController().navigate()
+                view?.findNavController()?.navigate(R.id.action_loginFragment2_to_marketActivity)
                 Toast.makeText(context, "Login Successful", Toast.LENGTH_SHORT).show()
             }
         })
