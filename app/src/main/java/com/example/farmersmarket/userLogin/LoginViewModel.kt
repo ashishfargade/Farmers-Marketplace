@@ -73,7 +73,6 @@ class LoginViewModel(private val repository: RegisterRepository, application: Ap
 
     fun doneNavigatingUserDetails() {
         _navigatetoUserDetails.value = false
-
     }
 
     fun donetoast() {

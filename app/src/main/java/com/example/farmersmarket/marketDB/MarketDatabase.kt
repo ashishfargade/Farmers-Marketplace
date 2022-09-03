@@ -15,14 +15,15 @@ abstract class MarketDatabase : RoomDatabase(){
         private var instance: MarketDatabase?= null
         private val LOCK = Any()
 
-        operator fun invoke(context: Context) = instance?: synchronized(LOCK){
+        operator fun invoke(context: Context?) = instance?: synchronized(LOCK){
             instance?: createDatabase(context).also{
                 instance = it
             }
         }
 
-        private fun createDatabase(context: Context) =
-            Room.databaseBuilder(context.applicationContext,
+        private fun createDatabase(context: Context?) =
+            Room.databaseBuilder(
+                context!!.applicationContext,
                 MarketDatabase::class.java, "MarketDatabase.db").build()
     }
 }

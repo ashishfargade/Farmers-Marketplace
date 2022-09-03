@@ -16,5 +16,5 @@ class SellerViewModel(private val repository: MarketRepository): ViewModel() {
         repository.delete(item)
     }
 
-    fun allMarketItems() = repository.allMarketItems()
+    fun getAllMarketItems() = repository.allMarketItems()
 }
