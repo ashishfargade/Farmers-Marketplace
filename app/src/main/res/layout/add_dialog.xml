@@ -23,7 +23,7 @@
             android:text="Add Products for Sale"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -40,8 +40,8 @@
                 android:layout_margin="5dp"
                 android:hint="Enter Product Name"
                 android:padding="5dp"
-                android:textColorHint="@color/white"
-                app:hintTextColor="@color/white">
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -49,8 +49,8 @@
                     android:id="@+id/idETItemName"
                     android:layout_margin="5dp"
                     android:inputType="text"
-                    android:textColorHint="@color/white"
-                    android:textColor="@color/white"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
                     android:textSize="14sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -62,8 +62,8 @@
                 android:layout_margin="5dp"
                 android:hint="Enter Quantity"
                 android:padding="5dp"
-                android:textColorHint="@color/white"
-                app:hintTextColor="@color/white">
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -71,8 +71,8 @@
                     android:id="@+id/idETItemQuantity"
                     android:layout_margin="5dp"
                     android:inputType="number"
-                    android:textColorHint="@color/white"
-                    android:textColor="@color/white"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
                     android:textSize="14sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -84,8 +84,8 @@
                 android:layout_margin="5dp"
                 android:hint="Enter Product Price"
                 android:padding="5dp"
-                android:textColorHint="@color/white"
-                app:hintTextColor="@color/white">
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -93,8 +93,8 @@
                     android:id="@+id/idETItemPrice"
                     android:layout_margin="5dp"
                     android:inputType="text"
-                    android:textColorHint="@color/white"
-                    android:textColor="@color/white"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
                     android:textSize="14sp" />
 
             </com.google.android.material.textfield.TextInputLayout>

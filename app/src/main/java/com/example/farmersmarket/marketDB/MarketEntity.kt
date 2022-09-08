@@ -7,8 +7,6 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "products_table")
 
 data class MarketEntity(
-    @PrimaryKey(autoGenerate = true)
-    var productId: Int? = null,
 
     @ColumnInfo(name = "itemName")
     var itemName: String,
@@ -18,4 +16,7 @@ data class MarketEntity(
 
     @ColumnInfo(name = "itemPrice")
     var itemPrice: Int
-)
+){
+    @PrimaryKey(autoGenerate = true)
+    var productId: Int? = null
+}

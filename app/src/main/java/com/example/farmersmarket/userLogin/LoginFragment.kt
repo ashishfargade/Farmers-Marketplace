@@ -1,7 +1,6 @@
 package com.example.farmersmarket.userLogin
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -11,7 +10,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
 import com.example.farmersmarket.R
 import com.example.farmersmarket.databinding.FragmentLoginBinding
 import com.example.farmersmarket.userDatabase.RegisterDatabase

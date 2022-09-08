@@ -7,7 +7,6 @@ import androidx.fragment.app.Fragment
 import com.example.farmersmarket.buyerMarket.BuyerFragment
 import com.example.farmersmarket.databinding.ActivityMarketBinding
 import com.example.farmersmarket.sellerMarket.SellerFragment
-import kotlinx.android.synthetic.main.activity_market.*
 
 class MarketActivity : AppCompatActivity() {
 

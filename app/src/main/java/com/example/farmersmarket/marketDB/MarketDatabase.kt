@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.farmersmarket.userDatabase.RegisterDatabase
 
 @Database(entities = [MarketEntity::class], version = 1)
 abstract class MarketDatabase : RoomDatabase(){
@@ -12,18 +13,26 @@ abstract class MarketDatabase : RoomDatabase(){
 
     companion object{
         @Volatile
-        private var instance: MarketDatabase?= null
-        private val LOCK = Any()
+        private var INSTANCE: MarketDatabase?= null
 
-        operator fun invoke(context: Context?) = instance?: synchronized(LOCK){
-            instance?: createDatabase(context).also{
-                instance = it
+        fun getInstance(context: Context): MarketDatabase {
+            synchronized(this) {
+
+                var instance = INSTANCE
+
+                if (instance == null) {
+                    instance = Room.databaseBuilder(
+                        context.applicationContext,
+                        MarketDatabase::class.java,
+                        "market_database"
+                    )
+                        .fallbackToDestructiveMigration()
+                        .build()
+
+                    INSTANCE = instance
+                }
+                return instance
             }
         }
-
-        private fun createDatabase(context: Context?) =
-            Room.databaseBuilder(
-                context!!.applicationContext,
-                MarketDatabase::class.java, "MarketDatabase.db").build()
     }
 }

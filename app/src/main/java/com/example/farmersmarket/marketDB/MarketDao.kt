@@ -12,6 +12,6 @@ interface MarketDao {
     @Delete
     suspend fun delete(item: MarketEntity)
 
-    @Query("SELECT * FROM products_table")
+    @Query("SELECT * FROM products_table ORDER BY productId ASC")
     fun getAllProducts(): LiveData<List<MarketEntity>>
 }
