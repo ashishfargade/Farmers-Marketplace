@@ -8,7 +8,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#C90EAE08">
+        android:background="#D55EDD55">
 
         <TextView
             android:id="@+id/idTVHeading"
@@ -91,8 +91,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/idETItemPrice"
+                    android:inputType="number"
                     android:layout_margin="5dp"
-                    android:inputType="text"
                     android:textColorHint="@color/black"
                     android:textColor="@color/black"
                     android:textSize="14sp" />
@@ -108,6 +108,7 @@
                 <Button
                     android:id="@+id/idBtnCancel"
                     android:text="Cancel"
+                    android:background="@color/dark_green"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -117,6 +118,7 @@
                 <Button
                     android:id="@+id/idBtnAdd"
                     android:text="Add"
+                    android:background="@color/dark_green"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
