@@ -16,6 +16,7 @@ import com.example.farmersmarket.marketDB.MarketEntity
 import com.example.farmersmarket.marketDB.MarketRepository
 import kotlinx.android.synthetic.main.fragment_seller.*
 
+
 class SellerFragment : Fragment() {
 
     private lateinit var sellerViewModel: SellerViewModel
@@ -61,6 +62,5 @@ class SellerFragment : Fragment() {
         // Inflate the layout for this fragment
         return binding.root
     }
-
 
 }

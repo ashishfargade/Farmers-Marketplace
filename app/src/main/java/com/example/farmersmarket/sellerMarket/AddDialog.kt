@@ -9,7 +9,6 @@ import com.example.farmersmarket.R
 import com.example.farmersmarket.marketDB.MarketEntity
 import kotlinx.android.synthetic.main.add_dialog.*
 
-
 class AddDialog(context: Context, var addDialogListener: AddDialogListener) :
     AppCompatDialog(context) {
 
